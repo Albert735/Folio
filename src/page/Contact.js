@@ -19,7 +19,9 @@ const Contact = () => {
   return (
     <div className=" h-full text-[#EEEEEE] w-[100%] space-y-[5rem]">
       <div className="flex justify-between items-start p-5">
-        <p className="text-3xl font-mono">A</p>
+        <Link to="/">
+          <p className="text-3xl font-mono">A</p>
+        </Link>
         <p className="text-2xl  bg-white rounded-full px-3 py-3 font-mono">
           04
         </p>

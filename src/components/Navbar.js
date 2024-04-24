@@ -22,7 +22,7 @@ function Navbar() {
     );
     gsap.fromTo(
       ".loader-2",
-      { y: -2000, opacity: 0 },
+      { y: -2000, opacity: 1 },
       { y: 0, opacity: 1, duration: 3 }
     );
     gsap.fromTo(
@@ -73,8 +73,10 @@ function Navbar() {
                       </Link>
                     </li>
                     <li>
-                      <span className="xl:text-3xl text-[12px]">03.</span>
-                      Projects
+                      <Link to="/projects">
+                        <span className="xl:text-3xl text-[12px]">03.</span>
+                        Projects{" "}
+                      </Link>
                     </li>
                     <li>
                       <Link to="/contact">

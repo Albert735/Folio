@@ -2,6 +2,7 @@ import React from "react";
 import me from "../assets/img/7 Items I Never Buy From the Women's Section.jpeg";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { Link } from "react-router-dom";
 
 const About = () => {
   useGSAP(() => {
@@ -12,24 +13,27 @@ const About = () => {
     );
     gsap.fromTo(
       ".heading-2",
-      { duration: 1, x: -1000, opacity: 1, ease: "power2.in" },
+      { duration: 2, x: -1000, opacity: 1, ease: "power2.in" },
       { x: 0, opacity: 1 }
     );
     gsap.fromTo(
-        "About-heading",
-        { duration: 1, x: 300, opacity: 1, ease: "power1.in" },
-        { x: -200, opacity: 1 }
+      "About-heading",
+      { duration: 1, x: 300, opacity: 1, ease: "power1.in" },
+      { x: -200, opacity: 1 }
     );
     gsap.fromTo(
-        "About-text",
-        { duration: 1, y: -300, opacity: 1, ease: "power3.in" },
-        { y: -200, opacity: 1 }
-    )
+      "About-text",
+      { duration: 1, y: -300, opacity: 1, ease: "power3.in" },
+      { y: -200, opacity: 1 }
+    );
   });
   return (
     <div className=" h-full text-[#EEEEEE] w-[100%] space-y-[5rem] p-5">
       <div className="flex justify-between items-start p-5">
-        <p className="text-3xl font-mono">A</p>
+        <Link to="/">
+          <p className="text-3xl font-mono">A</p>
+        </Link>
+
         <p className="text-2xl  bg-white rounded-full px-3 py-3 text-black font-mono">
           02
         </p>
