@@ -8,13 +8,13 @@ const About = () => {
   useGSAP(() => {
     gsap.fromTo(
       ".heading-1",
-      { duration: 2, y: 100, opacity: 1, ease: "power3.out" },
-      { y: -100, opacity: 1 }
+      { duration: 2, y: 100, opacity: 1, ease: "power3.out", },
+      { y: -100, opacity: 1,stagger: 0.5 }
     );
     gsap.fromTo(
       ".heading-2",
       { duration: 2, x: -1000, opacity: 1, ease: "power2.in" },
-      { x: 0, opacity: 1 }
+      { x: 0, opacity: 1, stagger: 0.5 }
     );
     gsap.fromTo(
       "About-heading",

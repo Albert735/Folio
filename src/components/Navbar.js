@@ -16,33 +16,26 @@ function Navbar() {
 
   useGSAP(() => {
     gsap.fromTo(
-      ".loader-1",
-      { y: -1000, opacity: 0 },
-      { y: 0, opacity: 1, duration: 3 }
-    );
-    gsap.fromTo(
       ".loader-2",
       { y: -2000, opacity: 1 },
-      { y: 0, opacity: 1, duration: 3 }
+      { y: 0, opacity: 1, duration: 3, delay: 0.5 }
     );
-    gsap.fromTo(
-      ".loader-3",
-      { y: -3000, opacity: 0 },
-      { y: 0, opacity: 1, duration: 4 }
-    );
+
     gsap.fromTo(
       ".loader-4",
       { y: -4000, opacity: 0 },
-      { y: 0, opacity: 1, duration: 5 }
+      { y: 0, opacity: 1, duration: 5, delay: 0.5 }
     );
   });
 
   return (
     <div className="flex text-[#EEEEEE] justify-between items-center w-full  p-[1rem] ">
-      <div>
-        <p className="text-3xl">A</p>
+      <div className="flex justify-between items-start p-5">
+        <Link to="/">
+          <p className="text-3xl font-mono">A</p>
+        </Link>
       </div>
-      <div>
+      <div className="flex justify-between items-start p-5">
         <CgMenuMotion
           onClick={() => {
             handleClick();
@@ -52,9 +45,7 @@ function Navbar() {
         />
         {open && (
           <>
-            <div className="loader-1 fixed  top-0 left-0 w-screen h-screen bg-[#EEEEEE]"></div>
             <div className="loader-2 fixed  top-0 left-0 w-screen h-screen bg-[#76ABAE]"></div>
-            <div className="loader-3 fixed  top-0 left-0 w-screen h-screen bg-[#31363F]"></div>
             <div className="loader-4 fixed justify-start items-center w-screen h-[100vh] top-0 left-0 bg-[#222831]  text white">
               <div className="flex flex-col justify-between w-screen  h-screen">
                 <div className="flex justify-between items-center p-5">
