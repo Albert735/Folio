@@ -3,10 +3,22 @@
 @tailwind utilities;
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    background-color: #222831;
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background: #000000;
+  color: #f3efe2;
 }
+
+
+
+@font-face {
+    font-family: 'Goldfish';
+    src: url('/public/Fonts/Goldfish.ttf') format('truetype');
+ }
+ 
+ 
+ .goldfish{
+     font-family: "Goldfish" ,'serif';
+ }

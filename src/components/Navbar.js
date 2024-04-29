@@ -8,7 +8,6 @@ import { useGSAP } from "@gsap/react";
 function Navbar() {
   const [open, setOpen] = React.useState(false);
   const handleClick = () => setOpen(!open);
-
   const onClick = () => setOpen(false);
 
   const [load, setLoad] = React.useState(false);
