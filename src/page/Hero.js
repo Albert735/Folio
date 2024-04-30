@@ -1,17 +1,27 @@
 import React from "react";
-import pic1 from "../assets/img/jan-antonin-kolar-8uWnMvmffOs-unsplash.jpg";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const Hero = () => {
+  useGSAP(() => {
+    gsap.to(".header-1", {
+      stagger: 0.1,
+      duration: 1,
+      repeat: -1,
+      y: 100,
+      ease: "none",
+      rotate: 360,
+      
+    });
+  });
+
   return (
     <div className="flex flex-col justify-center items-center w-screen h-screen">
-        <div>
-            <img src="" alt="" />
-        </div>
       <div>
-        <h1 className="absolute right-0 bottom-0 bg-transparent text-[8rem] font-bold goldfish">
-          PORTFOLIO
+        <h1 className="flex header  flex-col text-[8rem] font-bold goldfish">
+          <span className="header-1 inset-1">FOLIO-</span>
+          <span className="header-2 text-end">V1</span>
         </h1>
-        <img src={pic1} alt="" className="h-[20rem] object-cover" />
       </div>
     </div>
   );

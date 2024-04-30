@@ -7,18 +7,19 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  background: #000000;
-  color: #f3efe2;
 }
 
-
+body {
+  background: #000000;
+  color: #f3efe2;
+  overflow-x: hidden;
+}
 
 @font-face {
-    font-family: 'Goldfish';
-    src: url('/public/Fonts/Goldfish.ttf') format('truetype');
- }
- 
- 
- .goldfish{
-     font-family: "Goldfish" ,'serif';
- }
+  font-family: "Goldfish";
+  src: url("/public/Fonts/Goldfish.ttf") format("truetype");
+}
+
+.goldfish {
+  font-family: "Goldfish", "serif";
+}

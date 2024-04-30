@@ -17,13 +17,13 @@ function Navbar() {
     gsap.fromTo(
       ".loader-2",
       { y: -2000, opacity: 1 },
-      { y: 0, opacity: 1, duration: 3, delay: 0.5 }
+      { y: 0, opacity: 1, duration: 3, delay: 20 }
     );
 
     gsap.fromTo(
       ".loader-4",
       { y: -4000, opacity: 0 },
-      { y: 0, opacity: 1, duration: 5, delay: 0.5 }
+      { y: 0, opacity: 1, duration: 5, delay: 10 }
     );
   });
 
