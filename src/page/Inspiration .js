@@ -3,7 +3,8 @@ import pic1 from "../assets/img/daniele-d-andreti-5L2uWU7oeiQ-unsplash.jpg";
 import pic2 from "../assets/img/andrey-grinkevich-GeazrTcSseE-unsplash.jpg";
 import svg1 from "../assets/svg/arrow_outward_FILL0_wght400_GRAD0_opsz24.svg";
 import pic3 from "../assets/img/jean-baptiste-d-mTfhOmhvvQo-unsplash.jpg";
-import "./css/inspiration.css";
+// import "./css/inspiration.css";
+import Marquee from "react-fast-marquee";
 
 const Inspiration = () => {
   return (
@@ -37,35 +38,37 @@ const Inspiration = () => {
         RIGHT PLACE AND RIGHT TIME
       </p>
     </div> */}
-      <div className="relative">
-        <div className="w-full -left-20 flex justify-center items-center bg-[#f3efe2] rotate-6">
-          <div className="flex flex-nowrap gap-3 goldfish justify-start items-center bg-[#f3efe2] text-[3rem] text-black w-full p-5 moving-text">
-            <p className="w-fit shrink-0">A CREATIVE</p>
-            <img
-              src={pic1}
-              alt=""
-              className="h-[4rem] rounded-full object-cover shrink-0"
-            />{" "}
-            <p className="w-fit shrink-0">MIND KNOWS</p>
-            <img
-              src={pic2}
-              alt=""
-              className="h-[4rem] w-[10rem] rounded-full object-cover shrink-0"
-            />{" "}
-            <p className="w-fit shrink-0">HOW TO DO THE</p>
-            <img
-              src={svg1}
-              alt=""
-              className="rounded-full p-2 flex justify-center items-center bg-black shrink-0"
-            />
-            <p className="w-fit shrink-0">RIGHT THING AT THE</p>
-            <img
-              src={pic3}
-              alt=""
-              className="h-[4rem] w-[10rem] rounded-full object-cover shrink-0"
-            />{" "}
-            <p className="w-fit shrink-0">RIGHT PLACE AND RIGHT TIME</p>
-          </div>
+      <div className="flex justify-center items-center">
+        <div className="w-[120%] flex justify-center items-center bg-[#f3efe2] rotate-6 ">
+          <Marquee direction="left" speed={100} pauseOnHover>
+            <div className="flex flex-nowrap gap-3 goldfish justify-start items-center bg-[#f3efe2] text-[3rem] text-black p-5 ">
+              <p className="w-fit shrink-0">A CREATIVE</p>
+              <img
+                src={pic1}
+                alt=""
+                className="h-[4rem] rounded-full object-cover shrink-0"
+              />{" "}
+              <p className="w-fit shrink-0">MIND KNOWS</p>
+              <img
+                src={pic2}
+                alt=""
+                className="h-[4rem] w-[10rem] rounded-full object-cover shrink-0"
+              />{" "}
+              <p className="w-fit shrink-0">HOW TO DO THE</p>
+              <img
+                src={svg1}
+                alt=""
+                className="rounded-full p-2 flex justify-center items-center bg-black shrink-0"
+              />
+              <p className="w-fit shrink-0">RIGHT THING AT THE</p>
+              <img
+                src={pic3}
+                alt=""
+                className="h-[4rem] w-[10rem] rounded-full object-cover shrink-0"
+              />{" "}
+              <p className="w-fit shrink-0">RIGHT PLACE AND RIGHT TIME</p>
+            </div>
+          </Marquee>
         </div>
       </div>
     </>
