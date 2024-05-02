@@ -13,6 +13,7 @@ body {
   background: #000000;
   color: #f3efe2;
   overflow-x: hidden;
+  cursor: none;
 }
 
 @font-face {

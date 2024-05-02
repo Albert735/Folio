@@ -45,7 +45,7 @@ function Navbar() {
         {open && (
           <>
             <div className="loader-2 fixed  top-0 left-0 w-screen h-screen bg-[#76ABAE]"></div>
-            <div className="loader-4 fixed justify-start items-center w-screen h-[100vh] top-0 left-0 bg-[#222831]  text white">
+            <div className="loader-4 fixed justify-start items-center w-screen h-[100vh] top-0 left-0 bg-black text white">
               <div className="flex flex-col justify-between w-screen  h-screen">
                 <div className="flex justify-between items-center p-5">
                   <IoMdClose className="text-3xl" onClick={onClick} />

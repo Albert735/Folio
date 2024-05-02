@@ -3,7 +3,6 @@ import pic1 from "../assets/img/daniele-d-andreti-5L2uWU7oeiQ-unsplash.jpg";
 import pic2 from "../assets/img/andrey-grinkevich-GeazrTcSseE-unsplash.jpg";
 import svg1 from "../assets/svg/arrow_outward_FILL0_wght400_GRAD0_opsz24.svg";
 import pic3 from "../assets/img/jean-baptiste-d-mTfhOmhvvQo-unsplash.jpg";
-// import "./css/inspiration.css";
 import Marquee from "react-fast-marquee";
 
 const Inspiration = () => {
