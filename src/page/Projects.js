@@ -20,13 +20,16 @@ const Projects = () => {
         </Link>
 
         <p className="text-2xl  bg-white rounded-full px-3 py-3 text-black font-mono">
-          03
+          00
         </p>
       </div>
       <div
         id="projects"
-        className="flex justify-center items-center h-screen text-[#EEEEEE] bg-[#000000] w-[100%]"
+        className="flex flex-col gap-[5rem] justify-center items-center  text-[#EEEEEE] bg-[#000000] w-[100%]"
       >
+        <div>
+          <h1 className="text-5xl font-mono">Projects</h1>
+        </div>
         <div className="grid grid-cols-2 justify-center items-center gap-[4rem]">
           <Link to={"/project1"}>
             <span>
@@ -50,24 +53,31 @@ const Projects = () => {
               <h1 className="text-xl text-center font-mono">Skate</h1>
             </span>
           </Link>
-          <span>
-            <img
-              src={pic4}
-              alt=""
-              onClick={handleClick}
-              className="h-[20rem] rounded-xl"
-            />
-            <h1 className="text-xl text-center font-mono">Beats Pre Loader</h1>
-          </span>{" "}
-          <span>
-            <img
-              src={pic3}
-              alt=""
-              onClick={handleClick}
-              className="h-[20rem] w-[35rem] rounded-xl"
-            />
-            <h1 className="text-xl text-center font-mono">Batman</h1>
-          </span>
+          <Link to={"/project3"}>
+            <span>
+              <img
+                src={pic4}
+                alt=""
+                onClick={handleClick}
+                className="h-[20rem] rounded-xl"
+              />
+              <h1 className="text-xl text-center font-mono">
+                Beats Pre Loader
+              </h1>
+            </span>{" "}
+          </Link>
+          <Link to={"/project4"}>
+            {" "}
+            <span>
+              <img
+                src={pic3}
+                alt=""
+                onClick={handleClick}
+                className="h-[20rem] w-[35rem] rounded-xl"
+              />
+              <h1 className="text-xl text-center font-mono">Batman</h1>
+            </span>
+          </Link>
         </div>
       </div>
     </>

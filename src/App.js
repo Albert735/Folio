@@ -3,9 +3,9 @@ import Navbar from "./components/Navbar";
 import Inspiration from "./page/Inspiration ";
 import Hero from "./page/Hero";
 import Section1 from "./section/Section1";
-import car from "./assets/svg/shuttle-svgrepo-com.svg";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
+// import car from "./assets/svg/shuttle-svgrepo-com.svg";
+// import { useGSAP } from "@gsap/react";
+// import gsap from "gsap";
 import Cursor from "./CustomCursor/Cursor";
 
 function App() {
@@ -22,22 +22,22 @@ function App() {
     }
   }, 60);
 
-  useGSAP(() => {
-    gsap.fromTo(
-      ".car",
-      {
-        opacity: 3,
-        x: -1000,
-        ease: "elastic.in(1, 0.3)",
-      },
-      {
-        opacity: 4,
-        x: 1000,
-        duration: 8,
-        repeat: 5,
-      }
-    );
-  });
+  // useGSAP(() => {
+  //   gsap.fromTo(
+  //     ".car",
+  //     {
+  //       opacity: 3,
+  //       x: -1000,
+  //       ease: "elastic.in(1, 0.3)",
+  //     },
+  //     {
+  //       opacity: 4,
+  //       x: 1000,
+  //       duration: 8,
+  //       repeat: 5,
+  //     }
+  //   );
+  // });
 
   return (
     <>
@@ -58,9 +58,9 @@ function App() {
           >
             LOADING
           </h1>
-          <div className="car absolute top-[8rem] w-full">
+          {/* <div className="car absolute top-[8rem] w-full">
             <img src={car} alt="" className="h-[4rem]" />
-          </div>
+          </div> */}
         </span>
       </div>
 

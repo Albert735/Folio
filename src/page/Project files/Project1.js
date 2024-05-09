@@ -30,7 +30,7 @@ const Project1 = () => {
           className="text-2xl  bg-white rounded-full px-3 py-3 text-black font-mono"
           onClick={handleClick}
         >
-          03
+          01
         </p>
       </div>
 
