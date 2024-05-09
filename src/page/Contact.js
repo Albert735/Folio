@@ -7,6 +7,7 @@ import { FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { IoMdInformationCircleOutline } from "react-icons/io";
+import Cursor  from "../CustomCursor/Cursor";
 
 const Contact = () => {
   const {
@@ -17,7 +18,9 @@ const Contact = () => {
   const onSubmit = (data) => console.log(data);
 
   return (
-    <div className=" h-full text-[#EEEEEE] w-[100%] space-y-[5rem]">
+    <>
+    <Cursor />
+     <div className=" h-full text-[#EEEEEE] w-[100%] space-y-[5rem]">
       <div className="flex justify-between items-start p-5">
         <Link to="/">
           <p className="text-3xl font-mono">A</p>
@@ -176,6 +179,8 @@ const Contact = () => {
         <p>© 2024 - Portfolio. All rights reserved.</p>
       </div>
     </div>
+    </>
+   
   );
 };
 

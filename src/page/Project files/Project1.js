@@ -4,6 +4,7 @@ import pic2 from "../../assets/img/beatspreloader.png";
 import ArrowUp from "../../components/ArrowUp";
 import { IoMdArrowRoundBack } from "react-icons/io";
 import { Link } from "react-router-dom";
+import Cursor from "../../CustomCursor/Cursor";
 
 const Project1 = () => {
   function goBack() {
@@ -15,6 +16,7 @@ const Project1 = () => {
 
   return (
     <>
+    <Cursor />
       <div className="flex justify-between items-start p-5  bg-[#000000] w-[100%]">
         <span
           className="flex justify-start items-center gap-2 cursor-pointer"

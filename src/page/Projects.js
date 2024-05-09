@@ -4,6 +4,7 @@ import pic1 from "../assets/img/beatslandingpage.png";
 import pic2 from "../assets/img/Screenshot 2024-04-29 at 11.40.03 AM.png";
 import pic3 from "../assets/img/batmanlandingpage.png";
 import pic4 from "../assets/img/beatspreloader.png";
+import Cursor from "../CustomCursor/Cursor";
 
 const Projects = () => {
   const [open, setOpen] = React.useState(false);
@@ -12,6 +13,7 @@ const Projects = () => {
   return (
     <>
       {" "}
+      <Cursor />
       <div className="flex justify-between items-start p-5  bg-[#000000] w-[100%]">
         <Link to="/">
           <p className="text-3xl font-mono">A</p>
