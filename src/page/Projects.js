@@ -16,7 +16,7 @@ const Projects = () => {
       <Cursor />
       <div className="flex justify-between items-start p-5  bg-[#000000] w-[100%]">
         <Link to="/">
-          <p className="text-3xl font-mono">A</p>
+          <p className="text-3xl font-mono cursor-none">A</p>
         </Link>
 
         <p className="text-2xl  bg-white rounded-full px-3 py-3 text-black font-mono">

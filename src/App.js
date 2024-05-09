@@ -39,9 +39,6 @@ function App() {
     );
   });
 
-  
-  
-
   return (
     <>
       <div
@@ -66,11 +63,10 @@ function App() {
           </div>
         </span>
       </div>
-   
 
       <div className="overflow-hidden">
         <Navbar />
-        <Cursor/>
+        <Cursor />
         <Hero />
         <Inspiration />
         <Section1 />

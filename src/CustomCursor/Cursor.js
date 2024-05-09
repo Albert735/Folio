@@ -16,17 +16,23 @@ const Cursor = () => {
   React.useEffect(() => {
     document.addEventListener("mousemove", (event) => {
       const { clientX, clientY } = event;
+      // Check if secondaryCursor.current is not null before accessing its properties
+      if (secondaryCursor.current) {
+        const mouseX = clientX;
+        const mouseY = clientY;
 
-      const mouseX = clientX;
-      const mouseY = clientY;
+        positionRef.current.mouseX =
+          mouseX - secondaryCursor.current.clientWidth / 2;
+        positionRef.current.mouseY =
+          mouseY - secondaryCursor.current.clientHeight / 2;
+      }
 
-      positionRef.current.mouseX =
-        mouseX - secondaryCursor.current.clientWidth / 2;
-      positionRef.current.mouseY =
-        mouseY - secondaryCursor.current.clientHeight / 2;
-      mainCursor.current.style.transform = `translate3d(${
-        mouseX - mainCursor.current.clientWidth / 2
-      }px, ${mouseY - mainCursor.current.clientHeight / 2}px, 0)`;
+      // Check if mainCursor.current is not null before accessing its properties
+      if (mainCursor.current) {
+        mainCursor.current.style.transform = `translate3d(${
+          clientX - mainCursor.current.clientWidth / 2
+        }px, ${clientY - mainCursor.current.clientHeight / 2}px, 0)`;
+      }
     });
 
     return () => {};
@@ -43,7 +49,7 @@ const Cursor = () => {
         distanceX,
         distanceY,
       } = positionRef.current;
-      if (!destinationX || !destinationY) {
+      if (!destinationX | !destinationY) {
         positionRef.current.destinationX = mouseX;
         positionRef.current.destinationY = mouseY;
       } else {
